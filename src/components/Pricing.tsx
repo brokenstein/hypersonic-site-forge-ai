@@ -81,7 +81,7 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <Card key={index} className={`relative bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-blue-400 shadow-2xl shadow-blue-500/25' : ''}`}>
               {plan.popular && (
-                <divClassName="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
                     <Star className="w-4 h-4 mr-1" />
                     Most Popular
