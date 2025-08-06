@@ -110,11 +110,7 @@ const Pricing = () => {
                 
                 <Button 
                   variant={plan.buttonVariant}
-                  className={`w-full py-3 text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 ${
-                    plan.buttonVariant === 'default' 
-                      ? 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-blue-500/25' 
-                      : 'border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm'
-                  }`}
+                  className="w-full py-3 text-lg font-semibold rounded-xl"
                 >
                   {plan.buttonText}
                 </Button>
