@@ -25,7 +25,7 @@ const Hero = () => {
         {/* Main heading */}
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Build Stunning Websites with
-          <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 bg-clip-text text-transparent block mt-2">
+          <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-teal-400 bg-clip-text text-transparent block mt-2 font-extrabold">
             AI-Powered Magic
           </span>
         </h1>

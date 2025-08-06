@@ -79,7 +79,7 @@ const Pricing = () => {
         {/* Pricing cards */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
-            <Card key={index} className={`relative bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 ${plan.popular ? 'ring-2 ring-blue-400 shadow-2xl shadow-blue-500/25' : ''}`}>
+            <Card key={index} className={`relative bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105 flex flex-col ${plan.popular ? 'ring-2 ring-blue-400 shadow-2xl shadow-blue-500/25' : ''}`}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center">
@@ -98,8 +98,8 @@ const Pricing = () => {
                 <p className="text-gray-300">{plan.description}</p>
               </CardHeader>
               
-              <CardContent className="px-8 pb-8">
-                <ul className="space-y-4 mb-8">
+              <CardContent className="px-8 pb-8 flex-1 flex flex-col">
+                <ul className="space-y-4 mb-8 flex-1">
                   {plan.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center text-gray-300">
                       <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
@@ -110,7 +110,7 @@ const Pricing = () => {
                 
                 <Button 
                   variant={plan.buttonVariant}
-                  className="w-full py-3 text-lg font-semibold rounded-xl"
+                  className="w-full py-3 text-lg font-semibold rounded-xl mt-auto"
                 >
                   {plan.buttonText}
                 </Button>
